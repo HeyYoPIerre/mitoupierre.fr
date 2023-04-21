@@ -1,0 +1,148 @@
+
+body {
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar {
+    background-color: none;
+
+    a {
+        font-size: 1.3rem;
+        color: $c1;
+       
+        &:hover {
+            color: #cacaca;
+        }
+    }
+
+    .navbar-brand {
+        padding: 3px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: .3s ease-in-out;
+        }
+    }
+}
+
+
+h1 {
+    color: white;
+    font-size: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+li {
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #F9F8FF;
+}
+
+h2 {
+    color: #F9F8FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.cta {
+    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+    z-index: 101;
+
+    &:hover {
+        background: linear-gradient(to right, #3ab5b0 1%, #3d99be 10%, #56317a 100%);
+        color: white;
+    }
+}
+
+section {
+    padding: 80px;
+}
+
+.a-propos-main {
+    width: 50%;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+footer {
+    background-color: #18212b;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .social-media i {
+    margin-right: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    color: #fff;
+    }
+
+    .num:hover {
+        color: #a5b4fc;
+    }
+
+    .social-media i:hover {
+        transform: scale(1.1);
+        transition: .3s ease-in-out;
+    }
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 996px) {
+    header nav img {
+      margin-bottom: 20px;
+    }
+  
+    header,
+    footer {
+      padding: 20px 20px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    section {
+      padding: 50px 20px 50px 20px;
+    }
+  
+    nav a {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
