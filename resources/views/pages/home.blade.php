@@ -47,7 +47,6 @@
         </section>
 
         <section class="container-fluid accueil-photos">
-            <h2 class="row d-flex justify-content-center">Random Pictures</h2>
             <div class="wrap-slider" id="js-wrapSlider">
                 <ul class="js-slider">
                 @foreach ($images as $image)

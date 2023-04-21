@@ -3,11 +3,21 @@
 }
 
 .image-container{
-    height: 96vh;
-
     img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        filter: drop-shadow(0 -10px 0 white)
+                drop-shadow(0 10px 0 white)
+                drop-shadow(-10px 0 0 white)
+                drop-shadow(10px 0 0 white);
+    }
+
+}
+
+
+@include media-breakpoint-up(xxl){
+    .image-container{
+        max-height: 96vh;
     }
 }

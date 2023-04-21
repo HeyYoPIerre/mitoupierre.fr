@@ -23,8 +23,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-@if (Route::is('portefolio'))
-<body class="wbody"> @endif
+
+<body> 
     @include('partials.header')
     {{--Content--}}
     <div class="d-flex flex-column flex-grow-1">
