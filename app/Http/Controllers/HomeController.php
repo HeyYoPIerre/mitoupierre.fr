@@ -22,9 +22,7 @@ class HomeController extends Controller
 
     public function portefolio()
     {
-       $image = Image::inRandomOrder()->first();
-
-        return view('pages.portefolio', compact('image'));
+        return view('pages.portefolio');
     }
 
 }
