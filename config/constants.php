@@ -3,8 +3,8 @@
 return [
     'subjects' => [ 
         1 => 'Prise de contact',
-        2 => 'Devis',
-        3 => 'bite',
+        2 => 'Photographie',
+        3 => 'Développement',
         4 => 'Autre...',
     ]
     
