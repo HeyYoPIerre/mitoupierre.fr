@@ -2,8 +2,8 @@
   display: flex;
   border-radius: 10%;
   padding: 9px;
-  border-right: 3px solid #6930c3;
-  border-bottom: 3px solid #6930c3;
+  border-right: 3px solid #d444ce;
+  border-bottom: 3px solid #6891f8;
   max-height: 500px;
   max-width: fit-content;
   z-index: 10;
@@ -18,9 +18,10 @@
 
   .photographe{
     position: relative;
-    color: #5e60ce;
+    color: #6891f8;
     z-index: -1;
   }
+
   .devweb {
     color: #6930c3!important;
     z-index: 1;
@@ -430,6 +431,7 @@
   }
 }
 
+
 .accueil-filer {
   background-image: url(/resources/images/blurkurtlow.jpg);
   background-size: cover;
@@ -439,6 +441,10 @@
   position: sticky;
   top: 0;
   z-index: -1;
+}
+
+.accueil-dev {
+
 }
 
 .accueil-projet-perso {
@@ -455,14 +461,13 @@
 }
 
 .section-contact {
-  background-color: #18212b;
+  background-color: $c5;
 
   h2 {
     color: white;
     text-align: center;
     margin-bottom: 50px;
   }
-
 }
 
 form {

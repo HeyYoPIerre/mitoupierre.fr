@@ -25,8 +25,8 @@
                         <defs>
                             <filter id="goo">
                                 <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                                    result="goo" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
                                 <feBlend in="SourceGraphic" in2="goo" />
                             </filter>
                         </defs>
@@ -35,13 +35,13 @@
                     <div class="photographe">photographe</div>
                     <div class="text"> &ensp;et&ensp; </div>
                     <div class="devweb">développeur web</div>
-                    <div class="mt-4 text under">Basé à Caen, mais j'ai des jambes et un vélo tkt</div>
+                    <div class="mt-4 text under">Basé à Caen, mais je peux me déplacer si nécessaire</div>
                 </h1>
 
             </div>
             <div class=" d-flex justify-content-end position-relative col-4 align-content-end p-0 m-0">
                 <a href="#contact" class="cta position-absolute bottom-0 end-0">HIT ME UP!</a>
-                <img src="{{ asset('images/EnPP.jpg') }}" title="c mwa" alt="mwa" class="mwa">
+                <img src="{{ asset('images/Archive-18.jpg') }}" title="" alt="Portrait" class="mwa">
             </div>
             <div class="w-50 h-50 rounded-circle bg-color"></div>
         </section>
@@ -49,14 +49,19 @@
         <section class="container-fluid accueil-photos">
             <div class="wrap-slider" id="js-wrapSlider">
                 <ul class="js-slider">
-                @foreach ($images as $image)
-                    <li class="item"><a href="{{ route('portefolio') }}"><img src="{{ asset($image->filepath) }}" alt="{{ $image->alt }}"></a></li>
-                @endforeach
+                    @foreach ($images as $image)
+                        <li class="item"><a href="{{ route('portefolio') }}"><img src="{{ asset($image->filepath) }}"
+                                    alt="{{ $image->alt }}"></a></li>
+                    @endforeach
                 </ul>
             </div>
         </section>
-        
+
         <section class="container-fluid accueil-filer">
+            <div class="accueil-dev">
+                <p>En matière de développement web, l'aventure commence. Revenez plus tard pour y trouver mes créations. Vous êtes bien évidemment dans l'une d'entre elles.
+                </p>
+            </div>
         </section>
         <section class="container-fluid accueil-projet-perso d-flex flex-column">
             <h2>Projet Personnel</h2>
@@ -65,7 +70,6 @@
                 n'hésitez
                 pas à me contacter pour en savoir plus.</p>
         </section>
-
 
         <section id="contact" class="section-contact">
             <h2>Parlons de votre projet</h2>
@@ -100,7 +104,7 @@
                 </div>
 
                 <div class="form-column">
-                    <label for="subject_constant">Objet de la demande</label>
+                    <label for="subject_constant">objet de la demande</label>
                     <select name="subject_constant" id="subject_constant"
                         class="@error('subject_constant') is-invalid @enderror">
                         @foreach (config('constants.subjects') as $id => $name)
