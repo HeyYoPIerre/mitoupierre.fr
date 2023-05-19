@@ -58,10 +58,20 @@
         </section>
 
         <section class="container-fluid accueil-filer">
-            <div class="accueil-dev">
-                <p>En matière de développement web, l'aventure commence. Revenez plus tard pour y trouver mes créations. Vous êtes bien évidemment dans l'une d'entre elles.
+
+            <div class="textpop pt-5">
+                <p>En matière de développement web, l'aventure commence.
                 </p>
             </div>
+            <div class="textpop pt-5">
+                <p>Revenez plus tard pour y trouver mes créations.
+                </p>
+            </div>
+            <div class="textpop pt-5">
+                <p>Vous êtes bien évidemment dans l'une d'entre elles.
+                </p>
+            </div>
+
         </section>
         <section class="container-fluid accueil-projet-perso d-flex flex-column">
             <h2>Projet Personnel</h2>
