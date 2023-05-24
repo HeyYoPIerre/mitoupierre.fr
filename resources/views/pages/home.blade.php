@@ -40,11 +40,17 @@
 
             </div>
             <div class=" d-flex justify-content-end position-relative col-4 align-content-end p-0 m-0">
-                <a href="#contact" class="cta position-absolute bottom-0 end-0">HIT ME UP!</a>
-                <img src="{{ asset('images/Archive-18.jpg') }}" title="" alt="Portrait" class="mwa">
+                <a href="javascript:void(0)" class="cta position-absolute bottom-0 end-0 popupopener"  id="popupLink">HIT ME UP!</a>
+                <img src="{{ asset('images/Archive-21.jpg') }}" title="" alt="Portrait" class="mwa">
             </div>
             <div class="w-50 h-50 rounded-circle bg-color"></div>
         </section>
+
+        <div class="popup" onclick="closePopup()">
+            <h2>Il va falloir défiler manuellement</h2>
+            <p>J'ai ajouté des scripts faudrait pas les manquer</p>
+        </div>
+    
 
         <section class="container-fluid accueil-photos">
             <div class="wrap-slider" id="js-wrapSlider">
@@ -58,27 +64,56 @@
         </section>
 
         <section class="container-fluid accueil-filer">
-
-            <div class="textpop pt-5">
-                <p>En matière de développement web, l'aventure commence.
+            <div class="textpop ">
+                <img src="{{ asset('images/pngeggjs.webp') }}" alt="JS logo" class="col-6">
+                <p class="col-6">Faut vraiment préciser que j'ai passé des heures sur flexbox avant d'écrire n'importe quoi en Javascript?
                 </p>
             </div>
-            <div class="textpop pt-5">
-                <p>Revenez plus tard pour y trouver mes créations.
+            <div class="textpop flex-row-reverse">
+                <img src="{{ asset('images/bootstrap-logo-shadow.webp') }}" alt="bootstrap logo" class="col-6">
+                <p class="col-6">Forcément, je ne suis qu'un homme, j'utilise Bootstrap.
                 </p>
             </div>
-            <div class="textpop pt-5">
-                <p>Vous êtes bien évidemment dans l'une d'entre elles.
+            <div class="textpop">
+                <img src="{{ asset('images/PHP-logo.svg.webp') }}" alt="php logo" class="col-6">
+                <p class="col-6">C'est avec ce langage que j'ai commencé à perdre mon âme...
+                </p>
+            </div>
+            <div class="textpop flex-row-reverse">
+                <img src="{{ asset('images/lordoflaravel.webp') }}" alt="laravel logo" class="col-6">
+                <p class="col-6">Un framework pour les gouverner tous !
                 </p>
             </div>
 
         </section>
-        <section class="container-fluid accueil-projet-perso d-flex flex-column">
-            <h2>Projet Personnel</h2>
-            <p>Dans le cadre d'un projet personnel particulier, je suis à la recherche de personnes prêtes à m'accueilir le
-                temps d'un shooting photo.<br>Si vous êtes interressé(e) ou connaissez des gens suceptibles de l'être,
-                n'hésitez
-                pas à me contacter pour en savoir plus.</p>
+        <section class="container-fluid accueil-projet-perso d-flex flex-row">
+            <div class="col-3 d-flex justify-content-center flex-column align-items-center">
+                <span class="counter" data-count="3667">3.667</span>
+                <h3>Lignes rédigées</h3>
+            </div>
+            <div class="col-3 d-flex justify-content-center flex-column align-items-center">
+                <span class="counter" data-count="42">42</span>
+                <h3>Projets inachevés</h3>
+            </div>
+            <div class="col-3 d-flex justify-content-center flex-column align-items-center">
+                <span class="counter" data-count="6523">6.523</span>
+                <h3>Photos supprimées</h3>
+            </div>
+            <div class="col-3 d-flex justify-content-center flex-column align-items-center">
+                <span class="counter" data-count="10000">10,000</span>
+                <h3>Jabs</h3>
+            </div>
+        </section>
+
+        <section class="about">
+            <p>S'il faut se présenter, soit, je peux commencer. A la base je voulais just faire un site pour mettre des photos. 
+                Mais dans le fond j'veux pas faire comme les autres, du coups pas question de passer par un site de portfolios ! 
+                Alors j'ai commencé à apprendre, puis j'ai compris pourquoi on utilise des CMS. Mais j'ai déjà dit qu'ici on fait pas comme les autres! <br> 
+                De ce fait, j'ai fait mon propre CMS avec Laravel. C'est à cet instant que c'est parti en vrille. Du coups, je passe mon temps libre à coder, puis tout effacer et recommencer dans l'espoir d'être payé pour. 
+                J'ai plus le temps de shooter dans cette histoire! Parceque oui, je fais de la photo aussi. <br>
+                Depuis des années que je ne compte plus j'essaie sans cesse de faire de la photo en mieux, évidemment, vous l'avez compris, ici, on fait pas...bref. La science de l'image, l'art de raconter sans les mots, la joie de l'immortalité. Tant de raisons qui m'ont ammenées à ces quelques lignes. Mais le problème avec la photo c'est qu'il faut un sujet, et ça, c'est à vous de devenir. 
+                Si vous avez l'oeil, vous avez remarqué que je fais de la boxe, genre beaucoup trop de boxe. Et le plus dur dans l'histoire, c'est de trouver un équilibre dans ce triangle. <br>
+                Quelques lignes ne suffisent pas à résumer autant de passion et d'acharnement, alors autant en parler autour d'un projet d'envergure! </p>
         </section>
 
         <section id="contact" class="section-contact">
@@ -144,5 +179,6 @@
         </section>
         <section class="container-fluid accueil-filer-footer">
         </section>
+        
     </main>
 @endsection

@@ -4,7 +4,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
+    position: relative;
+    background-color: $c5;
 }
 
 .navbar {
@@ -38,7 +39,7 @@ h1 {
 
 p,
 li {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
     color: #F9F8FF;
 }
@@ -85,17 +86,18 @@ main {
 }
 
 footer {
-    background-color: #18212b;
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 1rem;
 
     a {
+        font-size: 20px;
         text-decoration: none;
         color: white;
     }
@@ -104,12 +106,7 @@ footer {
     margin-right: 15px;
     padding: 5px;
     text-align: center;
-    width: 20px;
     color: #fff;
-    }
-
-    .num:hover {
-        color: #a5b4fc;
     }
 
     .social-media i:hover {
