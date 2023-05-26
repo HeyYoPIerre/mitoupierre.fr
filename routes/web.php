@@ -28,8 +28,7 @@ Auth::routes([
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/', [ContactController::class, 'store'])->name('contacts.store');
 
-Route::get('/a-propos', [HomeController::class, 'about'])->name('about');
-Route::get('/portefolio', [HomeController::class, 'portefolio'])->name('portefolio');
+Route::get('/portfolio', [HomeController::class, 'portfolio'])->name('portfolio');
 
 Route::middleware('auth')->group(function () {
     // Mes routes protégées par mot de passe

@@ -20,9 +20,9 @@ class HomeController extends Controller
         return view('pages.a-propos');
     }
 
-    public function portefolio()
+    public function portfolio()
     {
-        return view('pages.portefolio');
+        return view('pages.portfolio');
     }
 
 }

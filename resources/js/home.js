@@ -110,30 +110,9 @@ wrapSlider.addEventListener("mouseout", () => {
 
 start();
 
-//ouverture du pop-up en cliquant
-document.addEventListener('DOMContentLoaded', function() {
-  // Code à exécuter une fois que le DOM est chargé
-  var link = document.getElementById('popupLink');
-  link.addEventListener('click', openPopup);
-});
-function openPopup(event) {
-  event.preventDefault(); // Empêche le comportement de lien par défaut
-  event.stopPropagation(); // Empêche la propagation de l'événement click
-  var popup = document.querySelector('.popup');
-  popup.style.display = 'block'; /* Affiche la fenêtre pop-up */
-}
-
-//fermeture du pop-up en cliquant. Si un click a lieu, la classe popup disparait.
-document.addEventListener('click', function(event) {
-  var popup = document.querySelector('.popup');
-  if (!popup.contains(event.target)) {
-      popup.style.display = 'none';
-  }
-});
-
 //text fade-in on scroll
-//Selectionne toutes les classes .texpop puis pour chaque entrée du tableau, les observes(API intersection observer).
-let targets = document.querySelectorAll('.textpop');
+//Selectionne toutes les classes .reveal puis pour chaque entrée du tableau, les observes(API intersection observer).
+let targets = document.querySelectorAll('[class*="reveal-"]');
 if (targets) {
   //
   let observer = new IntersectionObserver((entries) => {
@@ -141,7 +120,7 @@ if (targets) {
       //console.log(entry.isIntersecting)
       //console.log(entry.intersectionRatio) 
       if (entry.isIntersecting) {
-        entry.target.classList.add("scrolled");
+        entry.target.classList.add("reveal-visible");
       }
 
     })
@@ -152,6 +131,8 @@ if (targets) {
     observer.observe(target);
   });
 };
+
+
 
 function animateCounter() {
   const counters = document.querySelectorAll('.counter');
@@ -165,7 +146,7 @@ function animateCounter() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const targetValue = +entry.target.getAttribute('data-count');
-        const duration = 2600;
+        const duration = 2400;
         const increment = Math.ceil(targetValue / (duration / 16));
 
         let currentValue = 0;

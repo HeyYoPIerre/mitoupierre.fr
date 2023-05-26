@@ -462,15 +462,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: $c1;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid $c1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
   display: none;
+
+  h2,
+  p {
+    color: black !important;
+  }
+
 }
 
 .accueil-photos {
-  background: linear-gradient(180deg, rgb(37,3,92,1) 85%, rgb(25,0,65,0) 100%);
+  background: linear-gradient(180deg, rgb(37, 3, 92, 1) 85%, rgb(25, 0, 65, 0) 100%);
   height: 600px;
   position: relative;
   z-index: 1;
@@ -758,11 +765,7 @@
 .accueil-filer {
   margin-top: -110px;
   background: radial-gradient(ellipse at top, $c4, transparent),
-              radial-gradient(ellipse at bottom, $c5, transparent),
-}
-  .w-300{
-    width: 300px;
-  }
+    radial-gradient(ellipse at bottom, $c5, transparent);
 
   img {
     max-width: 300px;
@@ -774,17 +777,40 @@
     display: flex;
     align-items: center;
   }
+}
 
-.textpop {
-  font-weight: bold;
+[class*="reveal-"]{
   opacity: 0;
-  transition: opacity 500ms;
+  transform: translate(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-2 {
+  transition-delay: .3s;
+}
+
+.reveal-3 {
+  transition-delay: .5s;
+}
+
+.reveal-4 {
+  transition-delay: .7s;
+}
+
+.reveal {
+  font-weight: bold;
+  transform: translateY(-30px);
   font-size: 25px;
   display: flex;
   justify-content: space-around;
   padding-top: 100px;
 
-  &.scrolled {
+  &.reveal-loaded {
     opacity: 1;
   }
 }
@@ -854,6 +880,17 @@ label {
   margin-bottom: 10px;
 }
 
+.about {
+    font-size: 1.3em;
+    border-bottom: 1px solid $c2;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 80px;
+    text-justify:auto;
+    p {
+      padding-bottom: 20px;
+    }
+}
 
 .accueil-filer-footer {
   background-image: url(/resources/images/blurkurtlow.jpg);
