@@ -766,17 +766,6 @@
   margin-top: -110px;
   background: radial-gradient(ellipse at top, $c4, transparent),
     radial-gradient(ellipse at bottom, $c5, transparent);
-
-  img {
-    max-width: 300px;
-    max-height: 300px;
-    object-fit: contain;
-  }
-
-  p {
-    display: flex;
-    align-items: center;
-  }
 }
 
 [class*="reveal-"]{
@@ -810,9 +799,9 @@
   justify-content: space-around;
   padding-top: 100px;
 
-  &.reveal-loaded {
-    opacity: 1;
-  }
+  // &.reveal-loaded {
+  //   opacity: 1;
+  // }
 }
 
 .accueil-projet-perso {
@@ -836,35 +825,37 @@
 
 }
 
+.about {
+  background: radial-gradient(ellipse at top, $c4, transparent),
+  radial-gradient(ellipse at bottom, $c5, transparent);
+    font-size: 1.3em;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: justify;
+    p {
+      padding-bottom: 20px;
+    }
+}
+
+.line {
+  height: 1px;
+  width: 0;
+  background-color: $c2;
+  &.reveal-visible{
+    width: 100%;  
+  }
+}
+
 .section-contact {
-  background-color: $c5;
+  background: radial-gradient(ellipse at top, $c4, transparent),
+  radial-gradient(ellipse at bottom, $c5, transparent);
 
   h2 {
     color: $c1;
     text-align: center;
     margin-bottom: 50px;
   }
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin: auto;
-  color: $c1;
-}
-
-.form-nom-email {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.form-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
 }
 
 input,
@@ -880,17 +871,7 @@ label {
   margin-bottom: 10px;
 }
 
-.about {
-    font-size: 1.3em;
-    border-bottom: 1px solid $c2;
-    padding: 50px;
-    margin: auto;
-    margin-bottom: 80px;
-    text-justify:auto;
-    p {
-      padding-bottom: 20px;
-    }
-}
+
 
 .accueil-filer-footer {
   background-image: url(/resources/images/blurkurtlow.jpg);

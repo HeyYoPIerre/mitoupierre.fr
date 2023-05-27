@@ -41,7 +41,8 @@
             </div>
 
             <div class=" d-flex justify-content-end position-relative col-4 align-content-end p-0 m-0">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary cta position-absolute bottom-0 end-0 popupopener border-0" id="popupLink">HIT ME
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-primary cta position-absolute bottom-0 end-0 popupopener border-0" id="popupLink">HIT ME
                     UP!</button>
                 <img src="{{ asset('images/Archive-21.jpg') }}" title="" alt="Portrait" class="mwa">
             </div>
@@ -53,7 +54,8 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark text-white">
                     <div class="modal-header" style="border-color: #343a40">
-                        <div class="modal-title text-uppercase" id="exampleModalLabel">Il va falloir défiler manuellement</div>
+                        <div class="modal-title text-uppercase" id="exampleModalLabel">Il va falloir défiler manuellement
+                        </div>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -77,104 +79,127 @@
             </div>
         </section>
 
-        <section class="container accueil-filer">
-            <div class="reveal">
-                <img src="{{ asset('images/pngeggjs.webp') }}" alt="JS logo" class="col-6 reveal-1">
-                <p class="col-6 reveal-2">Faut vraiment préciser que j'ai passé des heures sur flexbox avant d'écrire
-                    n'importe quoi en Javascript?
-                </p>
+        <section class="container shadow px-4 px-md-5 accueil-filer">
+            <div class="row mt-4 mb-5">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="{{ asset('images/logosfront.webp') }}" alt="JS logo" class="img-fluid reveal-1 mb-4 mb-md-0">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="reveal-2 fw-600 font-17 font-md-22">L'aventure commence toujours par monter une équipe
+                </div>
             </div>
-            <div class="reveal flex-row-reverse">
-                <img src="{{ asset('images/bootstrap-logo-shadow.webp') }}" alt="bootstrap logo" class="col-6 reveal-1">
-                <p class="col-6 reveal-2">Forcément, je ne suis qu'un homme, j'utilise Bootstrap.
-                </p>
+            <div class="row flex-column-reverse flex-md-row mb-5">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="reveal-2 fw-600 font-17 font-md-22">Forcément, je ne suis qu'un homme, j'utilise Bootstrap
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="{{ asset('images/bootstrap-logo-shadow.webp') }}" alt="bootstrap logo" height="300"
+                        width="300" class="img-fluid reveal-1 mb-4 mb-md-0">
+                </div>
             </div>
-            <div class="reveal">
-                <img src="{{ asset('images/PHP-logo.svg.webp') }}" alt="php logo" class="col-6 reveal-1">
-                <p class="col-6 reveal-2">C'est avec ce langage que j'ai commencé à perdre mon âme...
-                </p>
+            <div class="row mb-5">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="{{ asset('images/PHP-logo.svg.webp') }}" alt="php logo" height="300" width="300"
+                        class="img-fluid reveal-1 mb-4 mb-md-0">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="reveal-2 fw-600 font-17 font-md-22"> Armé de mon php et mon couteau je me suis attaqué au
+                        backend
+                    </p>
+                </div>
             </div>
-            <div class="reveal flex-row-reverse">
-                <img src="{{ asset('images/lordoflaravel.webp') }}" alt="laravel logo" class="col-6 reveal-1">
-                <p class="col-6 reveal-2">Un framework pour les gouverner tous !
-                </p>
+            <div class="row flex-column-reverse flex-md-row mb-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="reveal-2 fw-600 font-17 font-md-22">Un framework pour les gouverner tous !
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="{{ asset('images/lordoflaravel.webp') }}" alt="lordoflaravel" height="300"
+                        width="300" class="img-fluid reveal-1 mb-4 mb-md-0">
+                </div>
             </div>
-
         </section>
-        <section class="container-fluid accueil-projet-perso d-flex flex-row">
-            <div class="col-3 d-flex justify-content-center flex-column align-items-center">
-                <span class="counter" data-count="3667">3.667</span>
-                <h3>Lignes rédigées</h3>
-            </div>
-            <div class="col-3 d-flex justify-content-center flex-column align-items-center">
-                <span class="counter" data-count="42">42</span>
-                <h3>Projets inachevés</h3>
-            </div>
-            <div class="col-3 d-flex justify-content-center flex-column align-items-center">
-                <span class="counter" data-count="6523">6.523</span>
-                <h3>Photos supprimées</h3>
-            </div>
-            <div class="col-3 d-flex justify-content-center flex-column align-items-center">
-                <span class="counter" data-count="9999">9.999</span>
-                <h3>Jabs</h3>
+        <section class="container-fluid accueil-projet-perso">
+            <div class="row">
+                <div class="col-md-6 col-xl-3  d-flex justify-content-center flex-column align-items-center">
+                    <span class="counter" data-count="3667">3.667</span>
+                    <h3>Lignes rédigées</h3>
+                </div>
+                <div class="col-md-6 col-xl-3  d-flex justify-content-center flex-column align-items-center">
+                    <span class="counter" data-count="42">42</span>
+                    <h3>Projets inachevés</h3>
+                </div>
+                <div class="col-md-6 col-xl-3  d-flex justify-content-center flex-column align-items-center">
+                    <span class="counter" data-count="6523">6.523</span>
+                    <h3>Photos supprimées</h3>
+                </div>
+                <div class="col-md-6 col-xl-3  d-flex justify-content-center flex-column align-items-center">
+                    <span class="counter" data-count="9999">9.999</span>
+                    <h3>Jabs</h3>
+                </div>
             </div>
         </section>
 
-        <section class="container about">
-                <p class="reveal-1">A la base je voulais juste faire un site pour mettre des photos.
-                    Mais dans le fond je ne veux pas faire comme les autres, du coup pas question de passer par un site de
-                    portfolios !
-                    Alors j'ai commencé à apprendre, puis j'ai compris pourquoi on utilise des CMS. Mais j'ai déjà dit qu'ici on
-                    fait pas comme les autres ! </p>
-                <p class="reveal-2">De ce fait, j'ai fait mon propre CMS avec Laravel. C'est à cet instant que c'est parti en vrille. Du coup,
-                    je passe mon temps libre à coder, puis tout effacer et recommencer dans l'espoir d'être payé pour.
-                    J'ai plus le temps de shooter dans cette histoire ! Parce que oui, je fais de la photo aussi. </p>
-                <p class="reveal-3">Depuis des années que je ne compte plus j'essaie sans cesse de faire de la photo en mieux, évidemment, vous
-                    l'avez compris, ici, on fait pas... La science de l'image, l'art de raconter sans les mots, la joie de
-                    l'immortalité. Tant de raisons qui m'ont amenées à ces quelques lignes. Mais le problème avec la photo
-                    c'est qu'il faut un sujet, et ça, c'est à vous de le devenir.
-                    Si vous avez l'œil, vous avez remarqué que je fais de la boxe, genre beaucoup trop de boxe. Et le plus dur
-                    dans l'histoire, c'est de trouver un équilibre dans ce triangle. </p>
-                <p class="reveal-4">Quelques lignes ne suffisent pas à résumer autant de passion et d'acharnement, alors autant en parler autour
-                    d'un projet d'envergure ! </p>
+        <section class="container about rounded-4 shadow mt-5">
+            <p class="reveal-1">A la base je voulais juste faire un site pour mettre des photos.
+                Mais dans le fond je ne veux pas faire comme les autres, du coup pas question de passer par un site de
+                portfolios !
+                Alors j'ai commencé à apprendre, puis j'ai compris pourquoi on utilise des CMS. Mais j'ai déjà dit qu'ici on
+                fait pas comme les autres ! </p>
+            <p class="reveal-2">De ce fait, j'ai fait mon propre CMS avec Laravel. C'est à cet instant que c'est parti en
+                vrille. Du coup,
+                je passe mon temps libre à coder, puis tout effacer et recommencer dans l'espoir d'être payé pour.
+                J'ai plus le temps de shooter dans cette histoire ! Parce que oui, je fais de la photo aussi. </p>
+            <p class="reveal-3">Depuis des années que je ne compte plus j'essaie sans cesse de faire de la photo en mieux,
+                évidemment, vous
+                l'avez compris, ici, on fait pas... La science de l'image, l'art de raconter sans les mots, la joie de
+                l'immortalité. Tant de raisons qui m'ont amenées à ces quelques lignes. Mais le problème avec la photo
+                c'est qu'il faut un sujet, et ça, c'est à vous de le devenir.
+                Si vous avez l'œil, vous avez remarqué que je fais de la boxe, genre beaucoup trop de boxe. Et le plus dur
+                dans l'histoire, c'est de trouver un équilibre dans ce triangle. </p>
+            <p class="reveal-4">Quelques lignes ne suffisent pas à résumer autant de passion et d'acharnement, alors autant
+                en parler autour
+                d'un projet d'envergure ! </p>
         </section>
+        <div class="container mb-4">
+            <div class="line reveal-4"></div>
+        </div>
 
-        <section id="contact" class="section-contact">
-            <h2>Parlons de votre projet</h2>
+        <section id="contact" class="container section-contact shadow rounded-4 my-5 py-5">
+            <h2>Hit me up !</h2>
             @if (Session::has('success'))
                 <p class="alert alert-success">{{ Session::get('success') }}</p>
             @endif
-            <form method="POST" action="{{ route('contacts.store') }}">
+            <form method="POST" class="row mx-4 mx-md-5" action="{{ route('contacts.store') }}">
                 @csrf
 
-                <div class="form-name-email">
-                    <div class="form-column">
+                    <div class="col-md-6">
 
-                        <label for="name">nom</label>
+                        <label for="name" class="text-white">nom</label>
                         <input type="text" name="name" id="name" value="{{ old('name') }}"
-                            class="@error('name') is-invalid @enderror">
+                            class="form-control @error('name') is-invalid @enderror">
                         @error('name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
-                    <div class="form-column">
-                        <label for="email">email</label>
+                    <div class="col-md-6">
+                        <label for="email" class="text-white">email</label>
                         <input type="email" name="email" id="email" value="{{ old('email') }}"
-                            class="@error('email') is-invalid @enderror">
+                            class="form-control @error('email') is-invalid @enderror">
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
-                </div>
 
-                <div class="form-column">
-                    <label for="subject_constant">objet de la demande</label>
+                <div class="col-12">
+                    <label for="subject_constant" class="text-white">objet de la demande</label>
                     <select name="subject_constant" id="subject_constant"
-                        class="@error('subject_constant') is-invalid @enderror">
+                        class="form-control form-select @error('subject_constant') is-invalid @enderror">
                         @foreach (config('constants.subjects') as $id => $name)
                             <option value="{{ $id }}">{{ $name }}</option>
                         @endforeach
@@ -187,13 +212,15 @@
 
                 </div>
 
-                <label for="content">message</label>
-                <textarea name="content" id="content" rows="10" class="@error('content') is-invalid @enderror">{{ old('content') }}</textarea>
+                <div class="col-12">
+                    <label for="content" class="text-white">message</label>
+                <textarea name="content" id="content" rows="10" class="form-control @error('content') is-invalid @enderror">{{ old('content') }}</textarea>
                 @error('content')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
+                </div>
                 <div class="d-flex">
                     <button type="submit" class="btn cta border-0 mx-auto my-3">ENVOYER</button>
                 </div>

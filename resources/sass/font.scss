@@ -1,0 +1,19 @@
+@each $key, $value  in $bootstrapBreakpoints {
+    @include media-breakpoint-up($key) {
+        @for $i from 10 through 100 {
+            .font-#{$key}-#{$i} {
+                font-size: #{$i}#{"px"} !important;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 100 {
+    .font-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
+.fw-600 {
+    font-weight: 600;
+}
