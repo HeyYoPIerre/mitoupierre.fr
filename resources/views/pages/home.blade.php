@@ -83,7 +83,7 @@
         <section class="container shadow px-4 px-md-5 accueil-filer">
             <div class="row mt-4 mb-5">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="{{ asset('images/logosfront.webp') }}" alt="JS logo" class="img-fluid reveal-1 mb-4 mb-md-0">
+                    <img src="{{ asset('images/logosfront.webp') }}" alt="JS logo" loading="lazy" class="img-fluid reveal-1 mb-4 mb-md-0">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <p class="reveal-2 fw-600 font-17 font-md-22">L'aventure commence toujours par monter une équipe
@@ -95,13 +95,13 @@
                     </p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="{{ asset('images/bootstrap-logo-shadow.webp') }}" alt="bootstrap logo" height="300"
+                    <img src="{{ asset('images/bootstrap-logo-shadow.webp') }}" alt="bootstrap logo" loading="lazy" height="300"
                         width="300" class="img-fluid reveal-1 mb-4 mb-md-0">
                 </div>
             </div>
             <div class="row mb-5">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="{{ asset('images/PHP-logo.svg.webp') }}" alt="php logo" height="300" width="300"
+                    <img src="{{ asset('images/PHP-logo.svg.webp') }}" alt="php logo" loading="lazy" height="300" width="300"
                         class="img-fluid reveal-1 mb-4 mb-md-0">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
@@ -116,7 +116,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="{{ asset('images/lordoflaravel.webp') }}" alt="lordoflaravel" height="300"
+                    <img src="{{ asset('images/lordoflaravel.webp') }}" alt="lordoflaravel" loading="lazy" height="300"
                         width="300" class="img-fluid reveal-1 mb-4 mb-md-0">
                 </div>
             </div>
@@ -148,22 +148,19 @@
 
         <section class="container about rounded-4 shadow mt-5">
             <p class="reveal-1">A la base je voulais juste faire un site pour mettre des photos.
-                Mais dans le fond je ne veux pas faire comme les autres, du coup pas question de passer par un site de
-                portfolios !
-                Alors j'ai commencé à apprendre, puis j'ai compris pourquoi on utilise des CMS. Mais j'ai déjà dit qu'ici on
-                fait pas comme les autres ! </p>
+                Mais dans le fond je ne veux pas faire comme les autres, du coup pas d'autres choix que le faire de 0 !
+                Alors j'ai commencé à apprendre, puis j'ai compris pourquoi on utilise des classes, des  </p>
             <p class="reveal-2">De ce fait, j'ai fait mon propre CMS avec Laravel. C'est à cet instant que c'est parti en
-                vrille. Du coup,
-                je passe mon temps libre à coder, puis tout effacer et recommencer dans l'espoir d'être payé pour.
-                J'ai plus le temps de shooter dans cette histoire ! Parce que oui, je fais de la photo aussi. </p>
+                vrille. Je devais finir le front à base de Html/Css, mais surtout Javascript le démoniaque et Bootstrap le magnifique pour le responsive.
+                Tout juste achevé, ce site est déjà voué à muter. Entre fonctionnalités cachées et restructurations, n'hésitez pas à y revenir. Notamment pour y voir d'autres projets prendre vie.
+                Mais dans l'histoire, j'ai plus le temps de shooter ! Parce que oui, je fais de la photo aussi. </p>
             <p class="reveal-3">Depuis des années que je ne compte plus j'essaie sans cesse de faire de la photo en mieux,
                 évidemment, vous
-                l'avez compris, ici, on fait pas... La science de l'image, l'art de raconter sans les mots, la joie de
-                l'immortalité. Tant de raisons qui m'ont amenées à ces quelques lignes. Mais le problème avec la photo
-                c'est qu'il faut un sujet, et ça, c'est à vous de le devenir.
+                l'avez compris, ici, on fait différemment. Actuellement, cette partie du site a pour unique but de partager des images qui me parlent et que j'ai envie de stocker quelque part. Si vous y percevez ma vision et que vous 
+                souhaitez que je la mette à votre service, contactez-moi. Comme dit précédemment, j'ai prévu de faire évoluer ce site et de partager toujours plus d'images/sites mais pour voir tout ça, il faudra me suivre ou revenir ici.
                 Si vous avez l'œil, vous avez remarqué que je fais de la boxe, genre beaucoup trop de boxe. Et le plus dur
                 dans l'histoire, c'est de trouver un équilibre dans ce triangle. </p>
-            <p class="reveal-4">Quelques lignes ne suffisent pas à résumer autant de passion et d'acharnement, alors autant
+            <p class="reveal-4">Quelques lignes ne suffiront pas à résumer autant de passion et d'acharnement, alors autant
                 en parler autour
                 d'un projet d'envergure ! </p>
         </section>
