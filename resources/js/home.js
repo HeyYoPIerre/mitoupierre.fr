@@ -125,7 +125,7 @@ if (targets) {
 
     })
   }, {
-    threshold: [1]
+    threshold: [0]
   });
   targets.forEach(target => {
     observer.observe(target);

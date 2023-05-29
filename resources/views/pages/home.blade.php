@@ -5,8 +5,9 @@
 
         <section class="container accueil-introduction position-relative">
 
-            <div class="col-8">
-                <h1 class="d-flex flex-wrap">
+           <div class="row">
+            <div class="col-xl-8 col-md-7">
+                <h1 class="d-flex flex-wrap mb-5 mb-md-0 px-md-0 px-4">
                     <div class="lamp">
                         <div class="lava">
                             <div class="blob"></div>
@@ -31,23 +32,23 @@
                             </filter>
                         </defs>
                     </svg>
+
                     <div class="text"> Salut, moi c'est Pierre,&ensp;</div>
-                    <div class="photographe">photographe</div>
+                    <div class="photographe under">photographe</div>
                     <div class="text"> &ensp;et&ensp; </div>
                     <div class="devweb">développeur web</div>
-                    <div class="mt-4 text under">Basé à Caen, mais je peux me déplacer si nécessaire</div>
+                    <div class="mt-4 text">Basé à Caen, mais je peux me déplacer si nécessaire</div>
                 </h1>
-
             </div>
-
-            <div class=" d-flex justify-content-end position-relative col-4 align-content-end p-0 m-0">
+            <div class=" d-flex justify-content-end position-relative col-xl-4 col-md-5 align-content-end px-md-0 px-4 m-0">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     class="btn btn-primary cta position-absolute bottom-0 end-0 popupopener border-0" id="popupLink">HIT ME
                     UP!</button>
-                <img src="{{ asset('images/Archive-21.jpg') }}" title="" alt="Portrait" class="mwa">
+                <img src="{{ asset('images/Archive-21.jpg') }}" title="" alt="Portrait" class="mwa img-fluid">
             </div>
             <div class="w-50 h-50 rounded-circle bg-color"></div>
         </section>
+           </div>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -121,22 +122,26 @@
             </div>
         </section>
         <section class="container-fluid accueil-projet-perso">
-            <div class="row">
+            <div class="row py-4">
                 <div class="col-md-6 col-xl-3  d-flex justify-content-center flex-column align-items-center">
-                    <span class="counter" data-count="3667">3.667</span>
-                    <h3>Lignes rédigées</h3>
+                    <i class="fa-solid fa-code font-50 mb-4"></i>
+                    <span class="counter font-50" data-count="3667">3.667</span>
+                    <p class="mb-0 font-23">Lignes rédigées</p>
                 </div>
                 <div class="col-md-6 col-xl-3  d-flex justify-content-center flex-column align-items-center">
-                    <span class="counter" data-count="42">42</span>
-                    <h3>Projets inachevés</h3>
+                    <i class="fa-regular fa-folder font-50 mb-4"></i>
+                    <span class="counter font-50" data-count="42">42</span>
+                    <p class="mb-0 font-23">Projets inachevés</p>
                 </div>
                 <div class="col-md-6 col-xl-3  d-flex justify-content-center flex-column align-items-center">
-                    <span class="counter" data-count="6523">6.523</span>
-                    <h3>Photos supprimées</h3>
+                    <i class="fa-regular fa-image font-50 mb-4"></i>
+                    <span class="counter font-50" data-count="6523">6.523</span>
+                    <p class="mb-0 font-23">Photos supprimées</p>
                 </div>
                 <div class="col-md-6 col-xl-3  d-flex justify-content-center flex-column align-items-center">
-                    <span class="counter" data-count="9999">9.999</span>
-                    <h3>Jabs</h3>
+                    <div class="gloveicon mb-4"></div>
+                    <span class="counter font-50" data-count="8457">8.457</span>
+                    <p class="mb-0 font-23">Crochets gauche</p>
                 </div>
             </div>
         </section>
@@ -174,29 +179,29 @@
             <form method="POST" class="row mx-4 mx-md-5" action="{{ route('contacts.store') }}">
                 @csrf
 
-                    <div class="col-md-6">
+                <div class="col-md-6 mb-4">
 
-                        <label for="name" class="text-white">nom</label>
-                        <input type="text" name="name" id="name" value="{{ old('name') }}"
-                            class="form-control @error('name') is-invalid @enderror">
-                        @error('name')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email" class="text-white">email</label>
-                        <input type="email" name="email" id="email" value="{{ old('email') }}"
-                            class="form-control @error('email') is-invalid @enderror">
-                        @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
+                    <label for="name" class="text-white">nom</label>
+                    <input type="text" name="name" id="name" value="{{ old('name') }}"
+                        class="form-control @error('name') is-invalid @enderror">
+                    @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+                <div class="col-md-6 mb-4">
+                    <label for="email" class="text-white">email</label>
+                    <input type="email" name="email" id="email" value="{{ old('email') }}"
+                        class="form-control @error('email') is-invalid @enderror">
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
 
-                <div class="col-12">
+                <div class="col-12 mb-4">
                     <label for="subject_constant" class="text-white">objet de la demande</label>
                     <select name="subject_constant" id="subject_constant"
                         class="form-control form-select @error('subject_constant') is-invalid @enderror">
@@ -212,14 +217,14 @@
 
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 mb-4">
                     <label for="content" class="text-white">message</label>
-                <textarea name="content" id="content" rows="10" class="form-control @error('content') is-invalid @enderror">{{ old('content') }}</textarea>
-                @error('content')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
+                    <textarea name="content" id="content" rows="10" class="form-control @error('content') is-invalid @enderror">{{ old('content') }}</textarea>
+                    @error('content')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="d-flex">
                     <button type="submit" class="btn cta border-0 mx-auto my-3">ENVOYER</button>

@@ -4,22 +4,18 @@
   padding: 9px;
   border-right: 3px solid #d444ce;
   border-bottom: 3px solid $c3;
-  max-height: 500px;
-  max-width: fit-content;
   z-index: 10;
 }
 
 .accueil-introduction {
   display: flex;
   flex-direction: row;
-  width: 60%;
   align-items: flex-start;
   margin: auto;
 
   .photographe {
     position: relative;
     color: $c3;
-    z-index: -1;
   }
 
   .devweb {
@@ -36,12 +32,35 @@
     color: $c1;
     font-weight: bold;
     z-index: 1;
-    font-size: 50px;
     line-height: 1.6;
   }
 
   .under {
     z-index: -1;
+  }
+
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .under {
+      z-index: 1;
+    }
   }
 }
 
@@ -768,7 +787,7 @@
     radial-gradient(ellipse at bottom, $c5, transparent);
 }
 
-[class*="reveal-"]{
+[class*="reveal-"] {
   opacity: 0;
   transform: translate(-30px);
 }
@@ -819,37 +838,55 @@
     line-height: 2;
     display: flex;
     justify-content: center;
-    color: black !important;
-    margin-bottom: 20px;
+    color: $c5 !important;
   }
 
+  i {
+    color: $c4;
+  }
+
+  .gloveicon {
+    -webkit-mask-image: url('../../public/images/boxing\ gloves.webp');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-image: url('../../public/images/boxing\ gloves.webp');
+    background: $c5;
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .about {
   background: radial-gradient(ellipse at top, $c4, transparent),
-  radial-gradient(ellipse at bottom, $c5, transparent);
-    font-size: 1.3em;
-    padding: 50px;
-    margin: auto;
-    margin-bottom: 80px;
-    text-align: justify;
-    p {
-      padding-bottom: 20px;
-    }
+    radial-gradient(ellipse at bottom, $c5, transparent);
+  font-size: 1.3em;
+  padding: 50px;
+  margin: auto;
+  margin-bottom: 80px;
+  text-align: justify;
+
+  p {
+    padding-bottom: 20px;
+  }
 }
 
 .line {
   height: 1px;
   width: 0;
   background-color: $c2;
-  &.reveal-visible{
-    width: 100%;  
+
+  &.reveal-visible {
+    width: 100%;
   }
 }
 
 .section-contact {
   background: radial-gradient(ellipse at top, $c4, transparent),
-  radial-gradient(ellipse at bottom, $c5, transparent);
+    radial-gradient(ellipse at bottom, $c5, transparent);
 
   h2 {
     color: $c1;
@@ -881,43 +918,4 @@ label {
   /* Required for Safari */
   background-attachment: fixed;
   z-index: -1;
-}
-
-
-
-@media screen and (max-width: 996px) {
-  .accueil-introduction {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .accueil-introduction div {
-    padding-right: 0;
-    text-align: center;
-    order: 2;
-  }
-
-  .accueil-introduction img {
-    order: 1;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .accueil-photos {
-    padding: 20px;
-  }
-
-  .accueil-photos div {
-    flex-direction: column;
-  }
-
-  .section-contact {
-    padding: 50px 20px;
-  }
-
-  .form-nom-email {
-    flex-direction: column;
-    gap: 0;
-  }
 }
