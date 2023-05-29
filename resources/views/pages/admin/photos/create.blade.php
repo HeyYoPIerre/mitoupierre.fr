@@ -22,7 +22,14 @@
                                 </span>
                             @enderror
                         </div>
-                        
+                        <div class="mb-3">
+                            <input type="radio" name="format" id="paysage" value="0" checked class="me-2">
+                            <label for="paysage">paysage</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" name="format" id="portrait" value="1" class="me-2">
+                            <label for="portrait">portrait</label>
+                        </div>
                         <div class="mb-3">
                             <label for="formFile" class="form-label text-black">Ajouter une image</label>
                             <input class="form-control  @error('image') is-invalid @enderror" type="file" name="image" id="formFile">

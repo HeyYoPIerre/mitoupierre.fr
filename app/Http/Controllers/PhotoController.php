@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreImage;
 use App\Models\Image;
-use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreImage;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\ImageManagerStatic;
 
 class PhotoController extends Controller
 
@@ -29,11 +31,27 @@ class PhotoController extends Controller
 
     public function store(StoreImage $request): RedirectResponse
     {
-        $filepath = request('image')->store('images','public');
+        $filepath = request('image');
+        
+        if(request('format') == 0)
+        {
+            $width = 2000;
+            $height = 1333;
+        }
+        else
+        {
+            $width = 1333;
+            $height = 2000;
+        }
+
+        $photo = ImageManagerStatic::make($filepath)->fit($width,$height);
+        $photoName = Str::random(10) . time() . ".webp";
+        Storage::disk('public')->put('/images/' . $photoName, $photo->encode('webp'));
+
 
         $image = new Image();
         $image->alt = $request->alt;
-        $image->filepath = $filepath;
+        $image->filepath = '/images/' . $photoName;
         $image->save();
 
         return redirect('/admin/photos');

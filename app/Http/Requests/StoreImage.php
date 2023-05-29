@@ -24,6 +24,7 @@ class StoreImage extends FormRequest
         return [
             'alt' => 'nullable|string',
             'image' => 'required|image',
+            'format' => 'required',
         ];
     }
 }
