@@ -5,6 +5,7 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@erbelion/vite-plugin-laravel-purgecss": "^0.1.4",
         "@popperjs/core": "^2.11.6",
         "axios": "^1.1.2",
         "bootstrap": "^5.2.3",
