@@ -44,7 +44,7 @@
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     class="btn btn-primary cta position-absolute bottom-0 end-0 popupopener border-0" id="popupLink">HIT ME
                     UP!</button>
-                <img src="{{ asset('images/Archive-21.jpg') }}" title="" alt="Portrait" class="mwa img-fluid">
+                <img src="{{ asset('assets/Archive-21.jpg') }}" title="" alt="Portrait" class="mwa img-fluid">
             </div>
             <div class="w-50 h-50 rounded-circle bg-color"></div>
         </section>
@@ -83,7 +83,7 @@
         <section class="container shadow px-4 px-md-5 accueil-filer">
             <div class="row mt-4 mb-5">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="{{ asset('images/logosfront.webp') }}" alt="JS logo" loading="lazy" class="img-fluid reveal-1 mb-4 mb-md-0">
+                    <img src="{{ asset('assets/logosfront.webp') }}" alt="JS logo" loading="lazy" class="img-fluid reveal-1 mb-4 mb-md-0">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <p class="reveal-2 fw-600 font-17 font-md-22">L'aventure commence toujours par monter une équipe
@@ -95,13 +95,13 @@
                     </p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="{{ asset('images/bootstrap-logo-shadow.webp') }}" alt="bootstrap logo" loading="lazy" height="300"
+                    <img src="{{ asset('assets/bootstrap-logo-shadow.webp') }}" alt="bootstrap logo" loading="lazy" height="300"
                         width="300" class="img-fluid reveal-1 mb-4 mb-md-0">
                 </div>
             </div>
             <div class="row mb-5">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="{{ asset('images/PHP-logo.svg.webp') }}" alt="php logo" loading="lazy" height="300" width="300"
+                    <img src="{{ asset('assets/PHP-logo.svg.webp') }}" alt="php logo" loading="lazy" height="300" width="300"
                         class="img-fluid reveal-1 mb-4 mb-md-0">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
@@ -116,7 +116,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="{{ asset('images/lordoflaravel.webp') }}" alt="lordoflaravel" loading="lazy" height="300"
+                    <img src="{{ asset('assets/lordoflaravel.webp') }}" alt="lordoflaravel" loading="lazy" height="300"
                         width="300" class="img-fluid reveal-1 mb-4 mb-md-0">
                 </div>
             </div>
