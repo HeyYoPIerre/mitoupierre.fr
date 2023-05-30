@@ -114,7 +114,7 @@ if (wrapSlider != null) {
 
 //text fade-in on scroll
 //Selectionne toutes les classes .reveal puis pour chaque entrée du tableau, les observes(API intersection observer).
-let targets = document.querySelectorAll('[class*="reveal-"]');
+let targets = document.querySelectorAll('[class*="reveal-"]')
 if (targets) {
   //
   let observer = new IntersectionObserver((entries) => {
@@ -174,3 +174,17 @@ function animateCounter() {
 }
 
 animateCounter();
+
+var className = "bg-c5";
+var scrollTrigger = 60;
+const header = document.querySelector("#header");
+
+addEventListener("scroll", (event) => {animateHeader()});
+
+function animateHeader() {
+  if (window.scrollY >= scrollTrigger) {
+    header.classList.add(className);
+  } else {
+    header.classList.remove(className);
+  }
+};

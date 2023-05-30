@@ -1,7 +1,6 @@
-<nav class="navbar navbar-dark sticky-top navbar-expand-lg">
+<nav class="navbar navbar-dark sticky-top navbar-expand-lg" id="header">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ route('home') }}">MITOU PI'erre</a>
-    </button>
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="{{ route('portfolio') }}">portfolio</a>
