@@ -911,11 +911,11 @@ label {
 
 
 .accueil-filer-footer {
-  background-image: url(/resources/images/blurkurtlow.jpg);
+  background-image: url(/resources/images/blurkurth.webp);
   background-size: cover;
+  background-position: center;
+  position: sticky;
   height: 100vh;
-  position: -webkit-sticky;
-  /* Required for Safari */
   background-attachment: fixed;
   z-index: -1;
 }

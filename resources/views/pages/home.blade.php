@@ -151,7 +151,7 @@
                 Mais dans le fond je ne veux pas faire comme les autres, du coup pas d'autres choix que le faire de 0 !
                 Alors j'ai commencé à apprendre, puis j'ai compris pourquoi on utilise des classes, des  </p>
             <p class="reveal-2">De ce fait, j'ai fait mon propre CMS avec Laravel. C'est à cet instant que c'est parti en
-                vrille. Je devais finir le front à base de Html/Css, mais surtout Javascript le démoniaque et Bootstrap le magnifique pour le responsive.
+                vrille. Je devais finir le front à base de Html/Css, mais surtout Javascript le maléfique et Bootstrap le magnifique pour le responsive.
                 Tout juste achevé, ce site est déjà voué à muter. Entre fonctionnalités cachées et restructurations, n'hésitez pas à y revenir. Notamment pour y voir d'autres projets prendre vie.
                 Mais dans l'histoire, j'ai plus le temps de shooter ! Parce que oui, je fais de la photo aussi. </p>
             <p class="reveal-3">Depuis des années que je ne compte plus j'essaie sans cesse de faire de la photo en mieux,
