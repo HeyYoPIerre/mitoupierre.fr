@@ -20,7 +20,7 @@ use App\Models\Contact;
 
 Auth::routes([
     'login' => true,
-    'register' => true,
+    'register' => false,
     'reset' => true, // Réinitialisation de mot de passe
     'verify' => false, // Vérification d'email
 ]);
