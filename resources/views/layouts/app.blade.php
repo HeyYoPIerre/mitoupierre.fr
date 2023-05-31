@@ -9,7 +9,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   {{--/CSRF Token--}}
   <title>MITOU Pierre</title>
-  <meta name="description" content="Portfolio de Mitou Pierre, photographe et developpeur web.">
+  <meta name="description" content="Portfolio de Pierre Mitou, photographe et developpeur web.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
