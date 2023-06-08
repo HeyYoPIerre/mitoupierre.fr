@@ -8,6 +8,7 @@ body {
 }
 
 .navbar {
+    z-index: 10000;
     background-color: transparent;
     transition: background-color ease-in-out .15s;
 

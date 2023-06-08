@@ -179,7 +179,7 @@ var className = "bg-c5";
 var scrollTrigger = 60;
 const header = document.querySelector("#header");
 
-addEventListener("scroll", (event) => {animateHeader()});
+window.addEventListener("scroll", (event) => {animateHeader()});
 
 function animateHeader() {
   if (window.scrollY >= scrollTrigger) {

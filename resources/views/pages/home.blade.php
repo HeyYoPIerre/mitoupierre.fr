@@ -44,7 +44,7 @@
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     class="btn btn-primary cta position-absolute bottom-0 end-0 popupopener border-0" id="popupLink">HIT ME
                     UP!</button>
-                <img src="{{ asset('assets/Archive-21.jpg') }}" title="" alt="Portrait" class="mwa img-fluid">
+                <img src="{{ asset('assets/Archive-21.webp') }}" title="" alt="Portrait" class="mwa img-fluid">
             </div>
             <div class="w-50 h-50 rounded-circle bg-color"></div>
         </section>
@@ -149,9 +149,9 @@
         <section class="container about rounded-4 shadow mt-5">
             <p class="reveal-1">A la base je voulais juste faire un site pour mettre des photos.
                 Mais dans le fond je ne veux pas faire comme les autres, du coup pas d'autres choix que le faire de 0 !
-                Alors j'ai commencé à apprendre, puis j'ai compris pourquoi on utilise des classes, des  </p>
+                Alors j'ai commencé à apprendre, puis j'ai compris pourquoi on utilise des classes, des balises, des virgules et pleins de touches que je connaissais pas. </p>
             <p class="reveal-2">De ce fait, j'ai fait mon propre CMS avec Laravel. C'est à cet instant que c'est parti en
-                vrille. Je devais finir le front à base de Html/Css, mais surtout Javascript le maléfique et Bootstrap le magnifique pour le responsive.
+                vrille. Je devais finir le front à base de Html/Css, mais surtout Javascript le maléfique et Bootstrap le magnifique.
                 Tout juste achevé, ce site est déjà voué à muter. Entre fonctionnalités cachées et restructurations, n'hésitez pas à y revenir. Notamment pour y voir d'autres projets prendre vie.
                 Mais dans l'histoire, j'ai plus le temps de shooter ! Parce que oui, je fais de la photo aussi. </p>
             <p class="reveal-3">Depuis des années que je ne compte plus j'essaie sans cesse de faire de la photo en mieux,

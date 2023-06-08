@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark sticky-top navbar-expand-lg" id="header">
+<nav class="navbar navbar-dark position-fixed w-100 top-0 navbar-expand-lg" id="header">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ route('home') }}">MITOU PI'erre</a>
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">

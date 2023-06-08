@@ -1,19 +1,15 @@
 {
-  "public/images/boxing gloves.webp": {
-    "file": "assets/boxing gloves-1a0603ad.webp",
-    "src": "public/images/boxing gloves.webp"
-  },
   "resources/images/blurkurth.webp": {
     "file": "assets/blurkurth-f3c0a3f6.webp",
     "src": "resources/images/blurkurth.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-c2759539.js",
+    "file": "assets/app-bf7da241.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-a9a060fb.css",
+    "file": "assets/app-13f71b04.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
   }
