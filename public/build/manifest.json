@@ -1,4 +1,8 @@
 {
+  "public/assets/boxing gloves.webp": {
+    "file": "assets/boxing gloves-1a0603ad.webp",
+    "src": "public/assets/boxing gloves.webp"
+  },
   "resources/images/blurkurth.webp": {
     "file": "assets/blurkurth-f3c0a3f6.webp",
     "src": "resources/images/blurkurth.webp"
@@ -9,7 +13,7 @@
     "src": "resources/js/app.js"
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-13f71b04.css",
+    "file": "assets/app-1bf4e3b7.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
   }
